@@ -34,4 +34,20 @@ get('/update_movie/:id', { :controller => 'movies', :action => 'update_row' })
 
 # DELETE
 get('/delete_movie/:id', { :controller => 'movies', :action => 'destroy' })
+
+# Routes for the Actor resource:
+# CREATE
+get('/actors/new_form', { :controller => 'actors', :action => 'new_form' })
+get('/create_actor', { :controller => 'actors', :action => 'create_row' })
+
+# READ
+get('/actors', { :controller => 'actors', :action => 'index' })
+get('/actors/:id', { :controller => 'actors', :action => 'show' })
+
+# UPDATE
+get('/actors/:id/edit_form', { :controller => 'actors', :action => 'edit_form' })
+get('/update_actor/:id', { :controller => 'actors', :action => 'update_row' })
+
+# DELETE
+get('/delete_actor/:id', { :controller => 'actors', :action => 'destroy'})
 end

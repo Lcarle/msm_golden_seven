@@ -6,10 +6,15 @@
 
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>  
+  <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <ul>
+    <li> <a href="/movies"> MovieDB </a> </li>
+    <li> <a href="/movies"> Movies </a> </li>
+    <li> <a href="/directors"> Directors </a> </li>
+    <li> <a href="/actors"> Actors </a> </li>
+  </ul>
 <%= yield %>
 
 </body>

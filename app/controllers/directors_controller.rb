@@ -1,6 +1,6 @@
 class DirectorsController < ApplicationController
   def index
-    @directors = Directors.all
+    @directors = Director.all
 
   end
 
